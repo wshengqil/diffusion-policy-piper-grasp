@@ -225,6 +225,12 @@ tensorboard --logdir ./diffusion_policy_trained_models --port 6006
 
 ---
 
+## 许可与致谢
+
+本项目代码以 [MIT](LICENSE) 发布；robopal / robomimic / MuJoCo 等第三方组件的许可与出处见 [`docs/third-party.md`](docs/third-party.md)。
+
+---
+
 ## English TL;DR
 
 A complete imitation-learning pipeline for a PiPER manipulator in MuJoCo: 50 human teleoperated demonstrations → Diffusion Policy (DDPM + UNet, 100 epochs) → closed-loop evaluation. The headline isn't only the score (**40% → 100% on 5 rollouts**), but the two silent bugs that made a *working* policy look like a *failing* one: an observation-shape mismatch at inference time (single `[22]` frame vs. `[1,T,22]` batch/horizon tensor) and a success counter that ignored `reward >= 1.0`. Also includes Gym/Gymnasium compatibility, offline CLIP loading for low-dim training, and a documented WSL rendering limitation.
