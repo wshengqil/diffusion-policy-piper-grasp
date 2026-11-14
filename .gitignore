@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+*.so
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Training artifacts (not tracked — see README)
+*.pth
+*.pt
+*.ckpt
+diffusion_policy_trained_models/
+output_video/
+*.hdf5.bak
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log

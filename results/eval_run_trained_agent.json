@@ -1,0 +1,15 @@
+{
+  "_source": "run_trained_agent.py --horizon 1000 --n_rollouts 5 --seed 0 on the Epoch-100 last.pth (final config), transcribed from experiment report section 8",
+  "Return": 1.0,
+  "Horizon": 315.6,
+  "Success_Rate": 1.0,
+  "Num_Success": 5.0,
+  "Num_Rollouts": 5,
+  "baseline_for_comparison": {
+    "_source": "initial policy, evaluated through the fixed run_trained_agent.py (docs/pitfalls-and-fixes-zh.docx, section 6)",
+    "Return": 0.4,
+    "Success_Rate": 0.4,
+    "Num_Success": 2.0,
+    "Num_Rollouts": 5
+  }
+}
